@@ -10475,6 +10475,14 @@ header.masthead .masthead-heading {
     text-align: left;
   }
 
+    .timeline-icon-wrapper i {
+        font-size: 3rem;
+    }
+
+    .timeline-year {
+        font-size: 1.5rem;
+    }
+
 }
 @media (min-width: 992px) {
   .timeline > li {
