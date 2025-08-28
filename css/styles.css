@@ -10390,9 +10390,49 @@ header.masthead .masthead-heading {
   word-break:keep-all;
 }
 
+/* Timeline Icon Wrapper 스타일 추가 */
+.timeline-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.timeline-icon-wrapper i {
+    font-size: 3rem; /* 아이콘 크기를 더 크게 */
+    margin-bottom: 0.5rem;
+}
+
+.timeline-year {
+    font-size: 1.1rem; /* 연도 텍스트 크기를 더 크게 */
+    font-weight: bold;
+    margin-top: 0.3rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
 .auto_lineAlign {
 	word-break:keep-all;
 }
+
+@media (max-width: 576px) {
+    .timeline-icon-wrapper i {
+        font-size: 2rem;
+    }
+
+    .timeline-year {
+        font-size: 0.9rem;
+    }
+}
+
 
 @media (min-width: 768px) {
   .timeline:before {
@@ -10424,6 +10464,15 @@ header.masthead .masthead-heading {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
+
+    .timeline-icon-wrapper i {
+        font-size: 2.5rem;
+    }
+
+    .timeline-year {
+        font-size: 1rem;
+    }
+
 }
 @media (min-width: 992px) {
   .timeline > li {
